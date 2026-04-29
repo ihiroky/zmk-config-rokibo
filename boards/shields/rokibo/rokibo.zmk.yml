@@ -1,0 +1,13 @@
+file_format: "1"
+id: rokibo
+name: rokibo
+type: shield
+url: https://github.com/kumamuk-git/zmk-config-rokibo
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - pointer
+  - studio
+siblings:
+  - rokibo_left
+  - rokibo_right
