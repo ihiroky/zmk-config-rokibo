@@ -69,6 +69,14 @@
         };
     };
 
+    macros {
+        fzf: macro_node {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp JP_DOLLAR>, <&kp JP_LPAREN>, <&kp F>, <&kp Z>, <&kt F>, <&kp JP_RPAREN>;
+            tap-ms = <10>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -101,10 +109,10 @@
 
         NUMBER {
             bindings = <
-&kp LEFT_GUI    &kp RIGHT_GUI  &kp LEFT_CONTROL  &kp RIGHT_CONTROL  &trans                   &kp JP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_ASTERISK
-&kp JP_PERCENT  &mkp MB2       &mkp MB3          &mkp MB1           &kp LEFT_SHIFT           &kp JP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_SLASH
-&trans          &mkp MB4       &trans            &mkp MB5           &kp RIGHT_SHIFT          &kp JP_CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp JP_EQUAL
-&kp LEFT_ALT    &kp RIGHT_ALT  &trans            &trans             &trans           &trans  &kp JP_DOT    &kp N0                                    &kp JP_COMMA
+&trans             &trans  &trans  &trans  &trans          &kp JP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_ASTERISK
+&kp JP_PERCENT     &trans  &trans  &fzf    &trans          &kp JP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_SLASH
+&kp JP_UNDERSCORE  &trans  &trans  &trans  &trans          &kp JP_CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp JP_EQUAL
+&trans             &trans  &trans  &trans  &trans  &trans  &kp JP_DOT    &kp N0                                    &kp JP_COMMA
             >;
         };
 
