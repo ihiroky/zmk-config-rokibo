@@ -91,8 +91,8 @@
 
         SYMBOL {
             bindings = <
-&kp JP_PLUS   &kp JP_ASTERISK  &kp JP_LT        &kp JP_GT   &kp JP_YEN               &kp JP_QUOTE      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_DOLLAR       &kp JP_HASH
-&kp JP_MINUS  &kp JP_SLASH     &kp JP_QUESTION  &kp JP_AT   &kp JP_PIPE              &kp JP_DQUOTE     &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_AMPERSAND    &kp JP_TILDE
+&kp JP_PLUS   &kp JP_ASTERISK  &kp JP_QUESTION  &kp JP_AT   &kp JP_YEN               &kp JP_QUOTE      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_DOLLAR       &kp JP_HASH
+&kp JP_MINUS  &kp JP_SLASH     &kp JP_LT        &kp JP_GT   &kp JP_PIPE              &kp JP_DQUOTE     &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_AMPERSAND    &kp JP_TILDE
 &kp JP_EQUAL  &kp JP_PERCENT   &kp JP_COMMA     &kp JP_DOT  &kp JP_CARET             &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_EXCLAMATION  &kp JP_UNDERSCORE
 &kp JP_COLON  &trans           &trans           &kp LCTRL   &trans        &lt 4 DEL  &trans            &trans                                                &kp JP_SEMICOLON
             >;
@@ -110,8 +110,8 @@
         NUMBER {
             bindings = <
 &trans             &trans  &trans  &trans  &trans          &kp JP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_ASTERISK
-&kp JP_PERCENT     &trans  &trans  &fzf    &trans          &kp JP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_SLASH
-&kp JP_UNDERSCORE  &trans  &trans  &trans  &trans          &kp JP_CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp JP_EQUAL
+&kp JP_UNDERSCORE  &trans  &trans  &fzf    &trans          &kp JP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_SLASH
+&kp JP_PERCENT     &trans  &trans  &trans  &trans          &kp JP_CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp JP_EQUAL
 &trans             &trans  &trans  &trans  &trans  &trans  &kp JP_DOT    &kp N0                                    &kp JP_COMMA
             >;
         };
